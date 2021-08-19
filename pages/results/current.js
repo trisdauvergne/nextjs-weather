@@ -21,8 +21,8 @@ export const getServerSideProps = async () => {
   const res = await fetch("https://weatherapi-com.p.rapidapi.com/current.json?q=stockholm", {
     "method": "GET",
     "headers": {
-      "x-rapidapi-key": "bfc3214c88msh3ff7f5be1d4b52cp15da52jsn664b510a9b59",
-      "x-rapidapi-host": "weatherapi-com.p.rapidapi.com"
+      "x-rapidapi-key": `${process.env.NEXT_PUBLIC_API_KEY}`,
+      "x-rapidapi-host": `${process.env.NEXT_PUBLIC_API_HOST}`
     }
   });
   const data = await res.json();
