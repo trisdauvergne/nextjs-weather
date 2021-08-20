@@ -13,8 +13,8 @@ export default function Home() {
 
       <section className="home">
         <h1>Weather app</h1>
-        <p>Click <Link href="/results/current"><a>here</a></Link> to see the current weather in Stockholm (just Stockholm for now)</p>
-        <p>Or click <Link href="/results/forecasted"><a>here</a></Link> to see the weather (just in Stockholm) over the next 3 days</p>
+        <p>Click <Link href="/current"><a>here</a></Link> to see the current weather in Stockholm (just Stockholm for now)</p>
+        <p>Or click <Link href="/forecasted"><a>here</a></Link> to see the weather (just in Stockholm) over the next 3 days</p>
       </section>
 
     </div>
