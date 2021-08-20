@@ -1,22 +1,21 @@
 import Head from 'next/head'
 import Link from 'next/link'
-// import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>NextJS Weather App</title>
+        <title>Weather Vain</title>
         <meta name="description" content="An app for checking current and forecasted weather built with NextJS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <section className="home">
         <h1>Weather app</h1>
-        <p>There will be an intro</p>
-        <p>Click <Link href="/results/">here</Link> to find out about the weather</p>
-      </main>
+        <p>Click <Link href="/results/current"><a>here</a></Link> to see the current weather in Stockholm (just Stockholm for now)</p>
+        <p>Or click <Link href="/results/forecasted"><a>here</a></Link> to see the weather (just in Stockholm) over the next 3 days</p>
+      </section>
 
     </div>
   )
