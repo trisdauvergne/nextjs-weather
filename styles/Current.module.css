@@ -3,3 +3,12 @@
   top: 17.7rem;
   margin-left: 45vw;
 }
+
+.current__heading {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.current__text {
+  font-weight: 200;
+}

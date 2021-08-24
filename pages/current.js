@@ -5,14 +5,16 @@ const CurrentWeather = ({ currentData }) => {
 
   return (
     <section className={styles.current}>
-      <h1>Current weather in Stocholm</h1>
-      <p>Last updated: {currentData.current.last_updated}</p>
-      <p>Current {currentData.location.name} weather: {currentData.current.condition.text}</p>
-      <p>Current temp: {currentData.current.temp_c} deg c</p>
-      <p>Wind speed: {currentData.current.wind_kph} kph</p>
-      <p>Wind direction: {currentData.current.wind_dir}</p>
-      <p>Humidity: {currentData.current.humidity}%</p>
-      <p>UV index: {currentData.current.uv}</p>
+      <h1 className={styles.current__heading}>Current weather in Stocholm</h1>
+      <div className={styles.current__text}>
+        <p>Last updated: {currentData.current.last_updated}</p>
+        <p>Current {currentData.location.name} weather: {currentData.current.condition.text}</p>
+        <p>Current temp: {currentData.current.temp_c} deg c</p>
+        <p>Wind speed: {currentData.current.wind_kph} kph</p>
+        <p>Wind direction: {currentData.current.wind_dir}</p>
+        <p>Humidity: {currentData.current.humidity}%</p>
+        <p>UV index: {currentData.current.uv}</p>
+      </div>
     </section>
   );
 };

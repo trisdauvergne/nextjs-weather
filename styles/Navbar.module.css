@@ -24,9 +24,13 @@
   font-size: 2rem;
   margin-top: 2rem;
   font-weight: 200;
-  transition: font-weight .1s ease-in-out;
 }
 
 .navbar__anchor:hover {
   font-weight: 400;
+  transition: .1s ease-in-out;
+}
+
+.navbar__anchor:active {
+  color: #9BC53D;
 }

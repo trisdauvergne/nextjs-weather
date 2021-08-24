@@ -1,0 +1,25 @@
+.forecasted {
+  position: fixed;
+  top: 17.7rem;
+  margin-left: 45vw;
+}
+
+.forecasted__heading {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.forecasted__forecasts {
+  font-weight: 200;
+  display: flex;
+}
+
+.forecasted__forecast {
+  margin-right: 2rem;
+}
+
+.forecasted__date,
+.forecasted__subheading {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
