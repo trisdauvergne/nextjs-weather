@@ -4,7 +4,7 @@ const CurrentWeather = ({ currentData }) => {
   console.log('data in currentWeather', currentData);
 
   return (
-    <section className={styles.test}>
+    <section className={styles.current}>
       <h1>Current weather in Stocholm</h1>
       <p>Last updated: {currentData.current.last_updated}</p>
       <p>Current {currentData.location.name} weather: {currentData.current.condition.text}</p>

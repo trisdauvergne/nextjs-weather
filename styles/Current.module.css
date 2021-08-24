@@ -1,3 +1,5 @@
-.test {
-  background-color: red;
+.current {
+  position: fixed;
+  top: 17.7rem;
+  margin-left: 45vw;
 }
