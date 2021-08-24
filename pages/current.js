@@ -1,17 +1,21 @@
+import styles from '../styles/Current.module.css'
+
 const CurrentWeather = ({ currentData }) => {
   console.log('data in currentWeather', currentData);
+
   return (
-    <div>
+    <section className={styles.test}>
       <h1>Current weather in Stocholm</h1>
-      <p>Last updated at {currentData.current.last_updated}</p>
-      <p>Weather in {currentData.location.name} is {currentData.current.condition.text}</p>
-      <p>Currently {currentData.current.temp_c} deg c</p>
-      <p>Wind speed is {currentData.current.wind_kph} kph</p>
-      <p>Wind direction is {currentData.current.wind_dir}</p>
-      <p>Humidity is {currentData.current.humidity}%</p>
-    </div>
+      <p>Last updated: {currentData.current.last_updated}</p>
+      <p>Current {currentData.location.name} weather: {currentData.current.condition.text}</p>
+      <p>Current temp: {currentData.current.temp_c} deg c</p>
+      <p>Wind speed: {currentData.current.wind_kph} kph</p>
+      <p>Wind direction: {currentData.current.wind_dir}</p>
+      <p>Humidity: {currentData.current.humidity}%</p>
+      <p>UV index: {currentData.current.uv}</p>
+    </section>
   );
-}
+};
 
 export const getServerSideProps = async () => {
   const res = await fetch("https://weatherapi-com.p.rapidapi.com/current.json?q=stockholm", {
@@ -27,7 +31,7 @@ export const getServerSideProps = async () => {
     props: {
       currentData
     }
-  }
-}
+  };
+};
 
 export default CurrentWeather;

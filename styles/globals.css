@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
-nav {
-  border: 1px dashed cyan;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-/*   font-family: 'Lora', serif; */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
-nav > a {
-  margin-right: 1rem;
+body {
+  background-image: url('https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80');
+  object-fit: cover;
+  margin: auto;
+  color: #202727;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -20,20 +23,8 @@ a {
   font-weight: 700;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 footer {
-  border: 1px dashed orange;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: lightgoldenrodyellow;
-}
-
-.home {
-  border: 1px dashed red;
 }

@@ -2,7 +2,7 @@ const Forecasted = ({ forecastedData }) => {
   console.log('data in forecasted', forecastedData);
   
   return (
-    <div>
+    <section>
       <h1>Forecasted weather</h1>
       {forecastedData.forecast.forecastday.map((day, i) =>
       <div key={i}>
@@ -12,7 +12,7 @@ const Forecasted = ({ forecastedData }) => {
         <p>The forecasted windspeed is {day.day.maxwind_kph} kph</p>
         <p>UV {day.day.uv}</p>
       </div>)}
-    </div>
+    </section>
   );
 };
 
@@ -30,7 +30,7 @@ export const getServerSideProps = async () => {
     props: {
       forecastedData
     }
-  }
-}
+  };
+};
  
 export default Forecasted;
