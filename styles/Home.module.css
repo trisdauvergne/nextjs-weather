@@ -18,3 +18,13 @@
 .home__anchor:active {
   color: #9BC53D;
 }
+
+@media screen and (max-width: 767px) {
+  .home {
+    max-width: 80vw;
+    margin-left: 2rem;
+    top: 19rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+}
