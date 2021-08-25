@@ -1,23 +1,21 @@
 .navbar {
-  max-width: 50vw;
-  /* margin: auto; */
   top: 10rem;
-  margin-left: 25vw;
   position: fixed;
 }
 
 .navbar__logo {
-  font-size: 5rem;
+  margin-left: 25vw;
+  font-size: 4.5rem;
   font-family: 'Merriweather', serif;
   font-weight: 400;
 }
 
 .navbar__anchors {
-  max-width: 20vw;
+  margin-left: 25vw;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .navbar__anchor {
@@ -33,4 +31,41 @@
 
 .navbar__anchor:active {
   color: #9BC53D;
+}
+/* 
+@media screen and (max-width: 768px) and (min-width: 512px) {
+  .navbar__anchors {
+    background-color: red !important;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .navbar__logo {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+
+  .navbar__anchors {
+    margin-left: 0;
+    flex-direction: row;
+  }
+
+  .navbar__anchor {
+    font-size: 1.5rem;
+  }
+
+  .navbar__anchor:nth-child(1) {
+    position: fixed;
+    left: 2rem;
+  }
+
+  .navbar__anchor:nth-child(2) {
+    position: fixed;
+    right: 2rem;
+  }
 }
