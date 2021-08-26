@@ -13,12 +13,20 @@
   font-weight: 200;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .current {
     max-width: 80vw;
     margin-left: 2rem;
     top: 19rem;
     font-size: 1.2rem;
     font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .current {
+    top: 13.5rem;
+    font-size: .8rem;
+    line-height: 140%;
   }
 }

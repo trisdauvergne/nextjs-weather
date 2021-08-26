@@ -28,3 +28,10 @@
     font-weight: 300;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .home {
+    top: 13.5rem;
+    font-size: .8rem;
+  }
+}

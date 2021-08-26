@@ -62,3 +62,16 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .forecasted {
+    top: 13.5rem;
+    font-size: .8rem;
+    line-height: 140%;
+  }
+
+  .forecasted__forecasts {
+    height: 35vh;
+  }
+
+}

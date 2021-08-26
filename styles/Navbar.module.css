@@ -62,3 +62,28 @@
     right: 2rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    top: 1rem;
+  }
+
+  .navbar__logo {
+    font-size: 3.5rem;
+  }
+
+  .navbar__anchor {
+    font-size: 1.5em;
+    margin-top: 1rem;
+  }
+
+  .navbar__anchor:nth-child(1) {
+    position: fixed;
+    left: 2rem;
+  }
+
+  .navbar__anchor:nth-child(2) {
+    position: fixed;
+    right: 2rem;
+  }
+}
