@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .forecasted {
     top: 13.5rem;
     font-size: .8rem;
