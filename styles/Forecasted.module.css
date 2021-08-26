@@ -39,6 +39,7 @@
     top: 19rem;
     font-size: 1.2rem;
     font-weight: 300;
+    border: 1px dashed rgb(184, 184, 184);
   }
 
   .forecasted__forecasts {
@@ -65,8 +66,8 @@
 
 @media screen and (max-width: 375px) {
   .forecasted {
-    top: 13.5rem;
-    font-size: .8rem;
+    top: 14rem;
+    font-size: 1rem;
     line-height: 140%;
   }
 
@@ -74,4 +75,24 @@
     height: 35vh;
   }
 
+  .forecasted__scroll {
+    font-size: 1.25rem;
+
+    transform: scale(1);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+    }
+  
+    70% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0.95);
+    }
+  }
 }
