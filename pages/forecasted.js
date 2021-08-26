@@ -17,6 +17,7 @@ const Forecasted = ({ forecastedData }) => {
           <p>UV index: {day.day.uv}</p>
         </div>)}
       </div>
+      <p className={styles.forecasted__scroll}>Scroll down to see more</p>
     </section>
   );
 };

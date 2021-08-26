@@ -12,14 +12,53 @@
 .forecasted__forecasts {
   font-weight: 200;
   display: flex;
+  width: 50vw;
 }
 
 .forecasted__forecast {
   margin-right: 2rem;
+  min-width: 10vw;
 }
 
 .forecasted__date,
 .forecasted__subheading {
   font-size: 150%;
   margin-bottom: 1rem;
+}
+
+.forecasted__scroll {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .forecasted {
+    width: 90vw;
+    margin-left: 1rem;
+    top: 19rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .forecasted__forecasts {
+    width: 85vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-left: 1rem;
+  }
+
+  .forecasted__forecast {
+    margin-bottom: 1rem;
+  }
+
+  .forecasted__date {
+    font-size: 160%;
+  }
+
+  .forecasted__scroll {
+    display: block;
+  }
 }
