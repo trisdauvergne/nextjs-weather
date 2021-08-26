@@ -12,3 +12,10 @@
   font-weight: 400;
   transition: ease-in-out .1s;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}

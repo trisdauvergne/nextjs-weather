@@ -31,14 +31,8 @@
 .navbar__anchor:active {
   color: #9BC53D;
 }
-/* 
-@media screen and (max-width: 768px) and (min-width: 512px) {
-  .navbar__anchors {
-    background-color: red !important;
-  }
-} */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .navbar {
     top: 2rem;
     margin-left: 2rem;
@@ -55,7 +49,7 @@
   }
 
   .navbar__anchor {
-    font-size: 2.15rem;
+    font-size: 1.9rem;
   }
 
   .navbar__anchor:nth-child(1) {
